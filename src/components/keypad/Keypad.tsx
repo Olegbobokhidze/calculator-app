@@ -29,7 +29,7 @@ const Key = styled.div`
   color: ${(props) => props.theme.textColor};
   cursor: pointer;
   &:hover{
-  opacity: o.5;
+  opacity: 0.5;
   }
 `;
 const KeyDel = styled.div`
@@ -45,7 +45,7 @@ const KeyDel = styled.div`
   color: white;
   cursor: pointer;
   &:hover{
-  opacity: o.5;
+  opacity: 0.5;
   }
 `;
 const Equal = styled.div`
@@ -63,7 +63,7 @@ const Equal = styled.div`
   left: 158px;
   background-color: ${(props) => props.theme.circleToggle};
   &:hover{
-  opacity: o.5;
+  opacity: 0.5;
   }
 `;
 const Reset = styled.div`
@@ -81,7 +81,7 @@ const Reset = styled.div`
   color: white;
   background-color: ${(props) => props.theme.resetDelete};
   &:hover{
-  opacity: o.5;
+  opacity: 0.5;
   }
 `;
 const FooterHolder = styled.div`
