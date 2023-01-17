@@ -28,6 +28,9 @@ const Key = styled.div`
   font-size: 30px;
   color: ${(props) => props.theme.textColor};
   cursor: pointer;
+  &:hover{
+  opacity: o.5;
+  }
 `;
 const KeyDel = styled.div`
   display: flex;
@@ -41,6 +44,9 @@ const KeyDel = styled.div`
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  &:hover{
+  opacity: o.5;
+  }
 `;
 const Equal = styled.div`
   width: 145px;
@@ -56,6 +62,9 @@ const Equal = styled.div`
   top: 0px;
   left: 158px;
   background-color: ${(props) => props.theme.circleToggle};
+  &:hover{
+  opacity: o.5;
+  }
 `;
 const Reset = styled.div`
   width: 145px;
@@ -71,6 +80,9 @@ const Reset = styled.div`
   cursor: pointer;
   color: white;
   background-color: ${(props) => props.theme.resetDelete};
+  &:hover{
+  opacity: o.5;
+  }
 `;
 const FooterHolder = styled.div`
   position: relative;
