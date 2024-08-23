@@ -12,7 +12,7 @@ export const VideoPlayer = () => {
       style={{
         paddingLeft: "20px",
         paddingRight: "20px",
-        paddingTop:"100px",
+        paddingTop: "100px",
         gap: "20px",
         height: "100vh",
         display: "flex",
@@ -29,7 +29,7 @@ export const VideoPlayer = () => {
         controls
         volume={0}
         muted={true}
-        ignoreSilentSwitch="ignore"
+        ignoresilentswitch="ignore"
         url="https://media-house.s3.amazonaws.com/sizmar-ai-generated-videos/acac352c-32e9-4d15-b3c0-087c6a72a2f8-c7d4afb3-37d7-4e19-afc1-985c9631c4db.mp4"
       />
       <h1>video player</h1>
