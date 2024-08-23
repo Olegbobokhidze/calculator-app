@@ -1,9 +1,27 @@
+import { useState } from "react";
 import ReactPlayer from "react-player";
 
 export const VideoPlayer = () => {
+  const [state, setState] = useState({
+    errorfirst: "",
+    errorsecond: "",
+  });
+
   return (
-    <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
-      <h1>React player</h1>
+    <div
+      style={{
+        paddingLeft: "20px",
+        paddingRight: "20px",
+        paddingTop:"100px",
+        gap: "20px",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <h1>First Error - {state.errorfirst}</h1>
+      <h1>Second Error - {state.errorsecond}</h1>
+
       <ReactPlayer
         playsinline
         width="100%"
@@ -23,6 +41,10 @@ export const VideoPlayer = () => {
         height="100%"
         preload="none"
         autoPlay={false}
+        onError={(e) => setState({ ...state, errorfirst: JSON.stringify(e) })}
+        onErrorCapture={(e) =>
+          setState({ ...state, errorsecond: JSON.stringify(e) })
+        }
         muted={true}
       />
     </div>
