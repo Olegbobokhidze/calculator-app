@@ -19,7 +19,7 @@ export const VideoPlayer = () => {
         width="100%"
         height="100%"
         preload="auto"
-        playsInline
+        autoPlay={false}
       ></video>
     </div>
   );
