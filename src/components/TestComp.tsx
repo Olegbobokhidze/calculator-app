@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Copy } from "lucide-react";
 
 const Button = styled.button`
   background-color: blue;
@@ -30,7 +31,7 @@ export const TestComp = () => {
         type="submit"
         className="size-10 flex-shrink-0 rounded-10 bg-black"
       >
-        Copy
+        <Copy />
       </Button>
       <p>{copySuccess && "you copied very well."}</p>
     </div>
