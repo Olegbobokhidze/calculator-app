@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import Keypad from "./components/keypad/Keypad";
-import { GlobalStyle, ThemeOne, ThemeThree, ThemeTwo } from "./Themes";
-import { VideoPlayer } from "./components/VideoPlayer";
+import { GlobalStyle, ThemeOne } from "./Themes";
 
 function App() {
   const [theme, setTheme] = useState(ThemeOne);
@@ -10,8 +9,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      {/* <Keypad theme={theme} setTheme={setTheme} /> */}
-      <VideoPlayer />
+      <Keypad theme={theme} setTheme={setTheme} />
     </ThemeProvider>
   );
 }
